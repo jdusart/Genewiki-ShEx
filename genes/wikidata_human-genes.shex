@@ -177,10 +177,10 @@ start = @<wikidata-human_gene> # Indicates which shape to use to start iterating
 }
 
 <ensembl-gene-reference> {
-      pr:P248	[wd:Q27975061 # stated in [P248] Ensembl Release 87 [Q27975061]
-                 wd:Q29458763 # stated in [P248] Ensembl Release 89 [Q29458763]
-	             wd:Q30227110 ] ; # stated in [P248] Ensembl Release 89 [Q30227110]
-	  pr:P594	LITERAL ; # Ensembl Gene ID [P594]
+    pr:P248	[wd:Q27975061 # stated in [P248] Ensembl Release 87 [Q27975061]
+             wd:Q29458763 # stated in [P248] Ensembl Release 89 [Q29458763]
+	         wd:Q30227110 ] ; # stated in [P248] Ensembl Release 89 [Q30227110]
+	pr:P594	LITERAL ; # Ensembl Gene ID [P594]
 }
 
 <homologene-reference> {
@@ -189,8 +189,8 @@ start = @<wikidata-human_gene> # Indicates which shape to use to start iterating
 }
 
 <miriam_reference> {
-  pr:P248		[wd:Q16335166] ; # Stated in [P248] MIRIAM registry
-  pr:P854		IRI ; # Reference URL [P854] to a IRI
+    pr:P248		[wd:Q16335166] ; # Stated in [P248] MIRIAM registry
+    pr:P854		IRI ; # Reference URL [P854] to a IRI
 }
 
 <uniprot-reference> {
