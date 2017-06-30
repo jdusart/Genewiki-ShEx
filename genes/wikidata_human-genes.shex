@@ -36,7 +36,7 @@ start = @<wikidata-human_gene> # Indicates which shape to use to start iterating
 	p:P684 @<P684_ortholog>* ; # Zero or more known orthologs.
 	p:P688 @<P688_encodes>* ; # Zero or more known geneproducts.
 	p:P703 @<P703_found_in_taxon_human> ; # In which taxonomy and where in that taxonomy this gene is found
-	p:P1057 @<P1057_chromosome>* ; Zero or more known chromosomes the gene is located on.
+	p:P1057 @<P1057_chromosome>* ;  # Zero or more known chromosomes the gene is located on.
 	p:P2888 @<P2888_exact_match>+ ; # One or more external Internationalized Resource Identifiers of a node on the
 	                                # semantic web, describing the same concept as linked data.
 	p:P2548 @<P2548_strand_orientation> ; # Its strand orrientation
@@ -47,8 +47,8 @@ start = @<wikidata-human_gene> # Indicates which shape to use to start iterating
 	p:P354 @<P354_hgnc_gene_id> ; # Exactly one hgnc gene identifier
 	p:P594 @<P594_ensembl_gene_id>* ; # Zero or more Ensembl gene identifier
 	p:P639 @<P639_refseq_rna_id>* ; # Zero or more RefSeq RNA identifiers
-	p:P704 @<P704_ensembl_transcript_id>* ; Zero or more Ensembl Transcript identifiers.
-	p:P593 @<P593_homologene_id> ; Exactly one homologene identifier
+	p:P704 @<P704_ensembl_transcript_id>* ; # Zero or more Ensembl Transcript identifiers.
+	p:P593 @<P593_homologene_id> ; # Exactly one homologene identifier
 
 	# Negative shapes
 	p:P352 @<P352_uniprot_id_wor>{0} ; # A gene can't have a uniprot identifier.
@@ -171,7 +171,7 @@ start = @<wikidata-human_gene> # Indicates which shape to use to start iterating
 
 ## REFERENCES
 <ncbi-gene-reference> { # reference to a NCBI gene record
-      pr:P248   wd:Q20950174 ] ; # stated in [P248] NCBI homo sapiens annotation release 107 [Q20950174]
+      pr:P248   [ wd:Q20950174 ] ; # stated in [P248] NCBI homo sapiens annotation release 107 [Q20950174]
 	  pr:P351	LITERAL ; # NCBI gene identifier
 	  pr:P813	xsd:dateTime ; # Date of retrieval
 }
@@ -193,6 +193,13 @@ start = @<wikidata-human_gene> # Indicates which shape to use to start iterating
   pr:P854		IRI ; # Reference URL [P854] to a IRI
 }
 
+<uniprot-reference> {
+	pr:P248	[wd:Q905695] ;
+	pr:P352	LITERAL ;
+	pr:P813	xsd:dateTime ;
+}
+
+## Lists with Wikidata items
 <gene_types> [
 				wd:Q7187  # gene
 				wd:Q20747295 # protein-coding gene
