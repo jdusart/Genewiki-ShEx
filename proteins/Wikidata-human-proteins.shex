@@ -13,9 +13,17 @@ PREFIX gw: <http://micel.io/genewiki/>
 PREFIX protein: <http://micel.io/genewiki/protein>
 PREFIX interpro: <http://micel.io/genewiki/interpro/>
 PREFIX reference: <http://micel.io/models/genewiki/references/> 
-start = gw:wikidata-human_protein.shex
+start = gw:wikidata-human_protein
 
-gw:wikidata-human_protein.shex {
+# wikidata-human protein is the main shape for a human protein data model in Wikidata. Each line between the brackets
+# represents the structure than can be enforced to validate human gene annotations in Wikidata
+#
+# We distinguish between value statements, identifier statements, and erronuous statements.
+# Value statements contain either actual values, or pointers to other Wikidata items. Identifier statements capture
+# external identifiers, erronuous statements are those that are errors.
+#
+
+gw:wikidata-human_protein {
 # STATEMENTS
 p:P31 @protein:P31_instance_of ;
 p:P279 @protein:P279_subclass_of_protein+ ;
@@ -107,6 +115,6 @@ interpro:release {
 }
 
 # Subgraphs
-genewiki:human_gene .
+gw:human_gene .
 
-genewiki:InterproFamily .
+gw:InterproFamily .
