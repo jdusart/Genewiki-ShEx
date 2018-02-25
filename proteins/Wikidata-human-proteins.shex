@@ -7,10 +7,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX prv: <http://www.wikidata.org/prop/reference/value/>
 PREFIX pr:  <http://www.wikidata.org/prop/reference/>
 PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX gw: <http://micel.io/genewiki/>
+start = gw:wikidata-human_protein
 
-start = @<wikidata-human_protein>
-
-<wikidata-human_protein> {
+gw:wikidata-human_protein {
 # STATEMENTS
 p:P31 @<P31_instance_of> ;
 p:P279 @<P279_subclass_of_protein>+ ;
