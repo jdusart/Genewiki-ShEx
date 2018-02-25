@@ -68,12 +68,12 @@ protein:P352_uniprot_id {
 }
 
 protein:P361_part_of {
-	ps:P361 @<InterproFamily> ;
+	ps:P361 @gw:InterproFamily ;
 	prov:wasDerivedFrom @reference:interpro_reference;
 }
 
 protein:P527_has_part {
-	ps:P527 @<InterproFamily> ;
+	ps:P527 @gw:InterproFamily ;
 	prov:wasDerivedFrom @reference:interpro_reference;
 }
 
