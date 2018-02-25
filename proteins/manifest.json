@@ -2,9 +2,17 @@
     {
         "schemaLabel": "protein shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
-        "data": "Endpoint: https://query.wikidata.org/sparql",
         "dataLabel": "Get 10 protein Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?doid .} LIMIT 10`@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "protein shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
+        "dataLabel": "Get 100 protein Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?doid .} LIMIT 100`@START",
         "status": "conformant"
     }
 ]
