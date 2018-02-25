@@ -1,0 +1,9 @@
+[
+    {
+        "schemaLabel": "protein shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?doid .} LIMIT 10`@START",
+        "status": "conformant"
+    }
+]

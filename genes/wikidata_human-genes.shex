@@ -10,7 +10,7 @@ PREFIX pr:  <http://www.wikidata.org/prop/reference/>
 PREFIX ps: <http://www.wikidata.org/prop/statement/>
 PREFIX gw: <http://micel.io/genewiki/>
 
-start = gw:wikidata-human_gene.shex # Indicates which shape to use to start iterating over the graph if none is provided.
+start = gw:wikidata-human_gene # Indicates which shape to use to start iterating over the graph if none is provided.
 
 # wikidata-human gene is the main shape for a human gene data model in Wikidata. Each line between the brackets
 # represents the structure than can be enforced to validate human gene annotations in Wikidata
@@ -20,7 +20,7 @@ start = gw:wikidata-human_gene.shex # Indicates which shape to use to start iter
 # external identifiers, erronuous statements are those that are errors.
 #
 
-gw:wikidata-human_gene.shex {
+gw:wikidata-human_gene {
     # VALUE STATEMENTS
 	p:P31 @<P31_instance_of_gene> ; # Item describes a gene
     p:P279 @<P279_subclass_of_gene>+ ; # Item is a subclass of e.g protein-coding gene.
