@@ -13,6 +13,7 @@ PREFIX gw: <http://micel.io/genewiki/>
 PREFIX protein: <http://micel.io/genewiki/protein>
 PREFIX interpro: <http://micel.io/genewiki/interpro/>
 PREFIX reference: <http://micel.io/models/genewiki/references/> 
+
 start = gw:wikidata-human_protein
 
 # wikidata-human protein is the main shape for a human protein data model in Wikidata. Each line between the brackets
@@ -50,12 +51,12 @@ p:P594 @protein:P594_ensembl_gene_id{0} ;
 
 protein:P31_instance_of {
 	ps:P31 wd:Q8054 ;
-	prov:wasDerivedFrom @reference:uniprot-reference;
+	prov:wasDerivedFrom @reference:uniprot_reference;
 }
 
 protein:P279_subclass_of_protein { 
     ps:P279 wd:Q8054 ;
-	prov:wasDerivedFrom @reference:uniprot-reference;
+	prov:wasDerivedFrom @reference:uniprot_reference;
 } 
 
 protein:P351_ncbi_gene_id .
@@ -63,7 +64,7 @@ protein:P594_ensembl_gene_id .
 
 protein:P352_uniprot_id {
 	ps:P352 LITERAL ;
-	prov:wasDerivedFrom @reference:uniprot-reference;
+	prov:wasDerivedFrom @reference:uniprot_reference;
 }
 
 protein:P361_part_of {
@@ -84,12 +85,12 @@ protein:P682_biological_process .
 
 protein:P702_encoded_by {	
      ps:P702 @gw:human_gene ;
-	 prov:wasDerivedFrom @reference:uniprot-reference+ 
+	 prov:wasDerivedFrom @reference:uniprot_reference+ 
 } 
 
 protein:P703_found_in_taxon_human {	
      ps:P703 [wd:Q15978631] ;
-	 prov:wasDerivedFrom @reference:uniprot-reference+ 
+	 prov:wasDerivedFrom @reference:uniprot_reference+ 
 }
 
 protein:P705_ensembl_protein_id .
@@ -97,7 +98,7 @@ protein:P705_ensembl_protein_id .
 protein:P1910_decreased_expression_in . 
 
 # REFERENCES
-reference:uniprot-reference {
+reference:uniprot_reference {
 	pr:P248	[wd:Q905695] ;
 	pr:P352	LITERAL ;
 	pr:P813	xsd:dateTime ;
