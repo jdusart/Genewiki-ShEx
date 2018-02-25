@@ -12,14 +12,30 @@ start = @<wikidata-human_protein>
 
 <wikidata-human_protein> {
 # STATEMENTS
+p:P31 @<P31_instance_of> ;
 p:P279 @<P279_subclass_of_protein>+ ;
-p:P702 @<P703_found_in_taxon_human>+ ;
+p:P361 @<P361_part_of>* ;
+p:P527 @<P527_has_part>* ;
+p:P680 @<P680_molecular_function>* ;
+p:P681 @<P681_cell_component>* ;
+p:P682 @<P682_biological_process>* ;
+p:P702 @<P702_encoded_by> ;
+p:P703 @<P703_found_in_taxon_human>+ ;
+p:P1910 @<P1910_decreased_expression_in>* ;
 
 # IDENTIFIERS
 p:P352 @<P352_uniprot_id>+ ;
+p:P705 @<P705_ensembl_protein_id>* ;
+p:P637 @<P637_RefSeq_Protein_ID>* ;
 }
 
 # Shape expressions for Wikidata statements
+
+<P31_instance_of> {
+	ps:P31 wd:Q8054 ;
+	prov:wasDerivedFrom @<uniprot-reference>;
+}
+
 <P279_subclass_of_protein> { 
     ps:P279 wd:Q8054 ;
 	prov:wasDerivedFrom @<uniprot-reference>;
@@ -30,10 +46,31 @@ p:P352 @<P352_uniprot_id>+ ;
 	prov:wasDerivedFrom @<uniprot-reference>;
 }
 
+<P361_part_of> {
+	ps:P361 @<InterproFamily> ;
+	prov:wasDerivedFrom @<interpro_reference> ;
+}
+
+<P527_has_part> .
+<P637_RefSeq_Protein_ID> .
+<P680_molecular_function> .
+<P681_cell_component> .
+<P682_biological_process> .
+
+
+<P702_encoded_by> {	
+     ps:P702 @<human_gene> ;
+	 prov:wasDerivedFrom @<uniprot-reference>+ 
+} 
+
 <P703_found_in_taxon_human> {	
      ps:P703 [wd:Q15978631] ;
 	 prov:wasDerivedFrom @<uniprot-reference>+ 
-} 
+}
+
+<P705_ensembl_protein_id> .
+
+<P1910_decreased_expression_in> . 
 
 # REFERENCES
 <uniprot-reference> {
@@ -41,3 +78,8 @@ p:P352 @<P352_uniprot_id>+ ;
 	pr:P352	LITERAL ;
 	pr:P813	xsd:dateTime ;
 }
+
+<interpro_reference> .
+
+# Subgraphs
+<human_gene> .
