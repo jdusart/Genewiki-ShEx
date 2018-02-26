@@ -1,7 +1,7 @@
 [
     {
         "schemaLabel": "human gene shape",
-        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-human-genes.shex",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/wikidata-human-genes.shex",
         "dataLabel": "Get 10 gene Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?geneid ; wdt:P703 wd:Q15978631 .} LIMIT 10`@START",
@@ -9,7 +9,7 @@
     },
     {
         "schemaLabel": "human gene shape",
-        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-human-genes.shex",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/wikidata-human-genes.shex",
         "dataLabel": "Get 100 gene Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?geneid ; wdt:P703 wd:Q15978631  .} LIMIT 100`@START",
@@ -17,7 +17,7 @@
     },
     {
         "schemaLabel": "human gene shape",
-        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-human-genes.shex",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/wikidata-human-genes.shex",
         "dataLabel": "Get all gene Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P351 ?geneid ; wdt:P703 wd:Q15978631  .}`@START",
