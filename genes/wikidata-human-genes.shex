@@ -10,7 +10,7 @@ PREFIX pr:  <http://www.wikidata.org/prop/reference/>
 PREFIX ps: <http://www.wikidata.org/prop/statement/>
 PREFIX gw: <http://micel.io/genewiki/>
 
-start = gw:wikidata-human-gene # Indicates which shape to use to start iterating over the graph if none is provided.
+start = @gw:wikidata-human-gene # Indicates which shape to use to start iterating over the graph if none is provided.
 
 # wikidata-human gene is the main shape for a human gene data model in Wikidata. Each line between the brackets
 # represents the structure than can be enforced to validate human gene annotations in Wikidata
@@ -179,7 +179,9 @@ gw:ncbi-gene-reference { # reference to a NCBI gene record
 gw:ensembl-gene-reference {
   pr:P248	[wd:Q27975061 # stated in [P248] Ensembl Release 87 [Q27975061]
          wd:Q29458763 # stated in [P248] Ensembl Release 89 [Q29458763]
-         wd:Q30227110 ] ; # stated in [P248] Ensembl Release 89 [Q30227110]
+         wd:Q30227110 # stated in [P248] Ensembl Release 89 [Q30227110]
+         wd:Q46401024 # stated in [P248] Ensembl Release 89 [Q30227110]
+         ] ; 
   pr:P594	LITERAL ; # Ensembl Gene ID [P594]
 }
 
