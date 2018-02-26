@@ -22,9 +22,8 @@ start = @gw:wikidata-human-gene # Indicates which shape to use to start iteratin
 
 gw:wikidata-human-gene {
     # VALUE STATEMENTS
-	p:P31 @gw:P31_instance_of_gene ; # Item describes a gene
-    p:P279 @gw:P279_subclass_of_gene+ ; # Item is a subclass of e.g protein-coding gene.
-
+	  p:P31 @gw:P31_instance_of_gene ; # Item describes a gene
+    
     # below is a special shape used to express that both the genomic start and genomic end properties are not mandatory
     # however if one does exist, the other one is requires. The * behind the brackets indicates the 0 or more carinality
     # that expresses the requirement that both properties are not mandatory.
@@ -67,7 +66,7 @@ gw:wikidata-human-gene {
 ####################
 
 gw:P31_instance_of_gene { 
-   ps:P31 [wd:Q7187] ;     # Instance of [P31] gene [wd:Q7187]
+   ps:P31 @gw:gene_types ;     # Instance of [P31] gene types
    prov:wasDerivedFrom @gw:ncbi-gene-reference OR @gw:ensembl-gene-reference ;
 } 
 gw:P279_subclass_of_gene { 
@@ -178,9 +177,13 @@ gw:ncbi-gene-reference { # reference to a NCBI gene record
 
 gw:ensembl-gene-reference {
   pr:P248	[
-         wd:Q46401024 # stated in [P248] Ensembl Release 91 [Q30227110]
+         @gw:ensembl-builds # stated in [P248] Ensembl Release 91 [Q30227110]
          ] ; 
   pr:P594	LITERAL ; # Ensembl Gene ID [P594]
+}
+
+gw:ensembl-builds {
+  p:P629
 }
 
 gw:homologene-reference {
@@ -203,6 +206,14 @@ gw:uniprot-reference {
 gw:gene_types [
   wd:Q7187  # gene
   wd:Q20747295 # protein-coding gene
+  wd:Q427087 # ncRNA
+  wd:Q284578 # snRNA
+  wd:Q284416 # snoRNA
+  wd:Q215980 # rRNA
+  wd:Q201448 # tRNA
+  wd:Q277338 # pseudo
+  wd:Q11053 # miscRNA
+  wd:Q25323710 # scRNA
 			 ]
 
 gw:human-chromosomes [
