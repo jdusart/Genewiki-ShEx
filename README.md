@@ -26,3 +26,11 @@ With shex.js running the following commands downloads the shapes collected here 
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+
+### Shapes
+| Shape | Jupyter | shex.js | Shaclex | 
+|---|---|---|---|
+|** genes ** | | ||
+|** proteins ** ||||
+|---|---|---|---|
+

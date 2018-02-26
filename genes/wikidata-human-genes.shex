@@ -171,7 +171,7 @@ gw:P704_ensembl_transcript_id {
 
 ## REFERENCES
 gw:ncbi-gene-reference { # reference to a NCBI gene record
-  pr:P248   [ wd:Q20641742 ] ; # stated in [P248] NCBI homo sapiens annotation release 107 [Q20950174]
+  pr:P248   [ wd:Q20641742 ] ; # stated in [P248] NCBI gene [Q20641742]
   pr:P351	LITERAL ; # NCBI gene identifier
   pr:P813	xsd:dateTime ; # Date of retrieval
 }
