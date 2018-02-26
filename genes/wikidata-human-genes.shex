@@ -120,7 +120,7 @@ gw:P2888_exact_match {
 
 gw:P2548_strand_orientation {	
    ps:P2548	@gw:strand-orientation ; # Strand orientation [P2548] of the gene
-   pq:P659		@gw:genomic-assembly+ ; # Qualifier indicating the one or more applicable genomic assembly
+   pq:P659	@gw:genomic-assembly+ ; # Qualifier indicating the one or more applicable genomic assembly
    prov:wasDerivedFrom @gw:ensembl-gene-reference ;
 }
 
@@ -177,10 +177,8 @@ gw:ncbi-gene-reference { # reference to a NCBI gene record
 }
 
 gw:ensembl-gene-reference {
-  pr:P248	[wd:Q27975061 # stated in [P248] Ensembl Release 87 [Q27975061]
-         wd:Q29458763 # stated in [P248] Ensembl Release 89 [Q29458763]
-         wd:Q30227110 # stated in [P248] Ensembl Release 89 [Q30227110]
-         wd:Q46401024 # stated in [P248] Ensembl Release 89 [Q30227110]
+  pr:P248	[
+         wd:Q46401024 # stated in [P248] Ensembl Release 91 [Q30227110]
          ] ; 
   pr:P594	LITERAL ; # Ensembl Gene ID [P594]
 }
