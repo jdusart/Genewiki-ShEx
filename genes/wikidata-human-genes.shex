@@ -184,7 +184,7 @@ gw:ensembl-gene-reference {
 }
 
 gw:homologene-reference {
-  pr:P248 [wd:Q468215]; # Stated in [P248]  homologene [Q468215]
+  pr:P248 [wd:Q20976936]; # Stated in [P248]  homologene build68 [Q20976936]
   pr:P593 LITERAL; # Homologene identifier
 }
 
