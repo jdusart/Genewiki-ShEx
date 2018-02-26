@@ -1,0 +1,50 @@
+[
+    {
+        "schemaLabel": "human gene shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-human-genes.shex",
+        "dataLabel": "Get 10 gene Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631 .} LIMIT 10`@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "human gene shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-human-genes.shex",
+        "dataLabel": "Get 100 gene Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .} LIMIT 100`@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "human gene shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-human-genes.shex",
+        "dataLabel": "Get all gene Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P351 ?uniprotid ; wdt:P703 wd:Q15978631  .}`@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "mouse gene shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-mouse-genes.shex",
+        "dataLabel": "Get 10 gene Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P351 ?uniprotid ; wdt:P703 wd:Q15978631 .} LIMIT 10`@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "mouse gene shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-mouse-genes.shex",
+        "dataLabel": "Get 100 gene Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P351 ?uniprotid ; wdt:P703 wd:Q15978631  .} LIMIT 100`@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "mouse gene shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/Wikidata-mouse-genes.shex",
+        "dataLabel": "Get all gene Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P351 ?uniprotid ; wdt:P703 wd:Q15978631  .}`@START",
+        "status": "conformant"
+    }
+]
