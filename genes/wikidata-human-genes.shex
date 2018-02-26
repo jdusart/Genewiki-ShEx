@@ -182,10 +182,6 @@ gw:ensembl-gene-reference {
   pr:P594	LITERAL ; # Ensembl Gene ID [P594]
 }
 
-gw:ensembl-builds {
-  p:P629
-}
-
 gw:homologene-reference {
   pr:P248 [wd:Q20976936]; # Stated in [P248]  homologene build68 [Q20976936]
   pr:P593 LITERAL; # Homologene identifier
