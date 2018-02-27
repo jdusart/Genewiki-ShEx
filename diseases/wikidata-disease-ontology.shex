@@ -18,10 +18,10 @@ PREFIX gw: <http://micel.io/genewiki/>
 
 start = @gw:disease
 
-gw:disease {
+gw:disease EXTRA p:P31 {
 
   # Statements 
-  p:P31 @gw:P31_disease-class ;
+  p:P31  @gw:P31_disease-class ;
   p:P279  @gw:P279_disease-parent-class* ;
   p:P2888 @gw:P2888_disease-ontology-iri ;
   p:P2888 @gw:P2888_identifiers-org-iri ;
@@ -39,9 +39,10 @@ gw:disease {
 
 ## Statements 
 
-gw:P31_disease-class EXTRA ps:P31 {
+gw:P31_disease-class {
   ps:P31 [wd:Q12136] ;
   prov:wasDerivedFrom @gw:do-reference ;
+
 } 
 
 gw:P279_disease-parent-class {
