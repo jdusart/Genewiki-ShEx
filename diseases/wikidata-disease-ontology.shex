@@ -21,7 +21,7 @@ start = @gw:disease
 gw:disease {
 
   # Statements 
-  p:P31 @gw:P31_disease-class and ;
+  p:P31 @gw:P31_disease-class ;
   p:P279  @gw:P279_disease-parent-class* ;
   p:P2888 @gw:P2888_disease-ontology-iri ;
   p:P2888 @gw:P2888_identifiers-org-iri ;
