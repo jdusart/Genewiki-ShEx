@@ -41,68 +41,68 @@ gw:disease {
 
 gw:P31_disease-class {
   ps:P31 [wd:Q12136] ;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
 
 gw:P279_disease-parent-class {
-  ps:P279  @<wikidata-disease> ;
-  prov:wasDerivedFrom @<do-reference> ;
+  ps:P279  @gw:disease ;
+  prov:wasDerivedFrom @gw:do-reference ;
 }
 
 gw:P2888_disease-ontology-iri {
   ps:P2888  [do:~] ;
-  prov:wasDerivedFrom @<do-reference>
+  prov:wasDerivedFrom @gw:do-reference ;
 }
 
 gw:P2888_identifiers-org-iri {
   ps:P2888  [doio:~] ;
-  prov:wasDerivedFrom @<miriam-reference>
+  prov:wasDerivedFrom @gw:miriam-reference
 }
 
 ## Identifiers
 gw:P699_disease_ontology_id { 
   ps:P699 LITERAL  /^DOID:[0-9]+$/;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
 
 gw:P486_mesh_id { 
   ps:P486 LITERAL ;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
 
 gw:P492_omim_id { 
   ps:P492 LITERAL ;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
 
 gw:P493_icd_9 { 
   ps:P493 LITERAL ;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
      
 gw:P494_icd_10 { 
   ps:P494 LITERAL ;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
   
 gw:P1550_orphanet_id {
   ps:P1550 LITERAL ;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
      
 gw:P1748_nci_thesaurus {
   ps:P1748 LITERAL ;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
 
 gw:P2888_exact_match {
   ps:P2888 IRI ;
-  prov:wasDerivedFrom @<miriam-reference> OR @<do-reference> ;
+  prov:wasDerivedFrom @gw:miriam-reference OR @gw:do-reference ;
 } 
      
 gw:P2892_umls-cui { 
   ps:P2892 LITERAL ;
-  prov:wasDerivedFrom @<do-reference> ;
+  prov:wasDerivedFrom @gw:do-reference ;
 } 
 
 

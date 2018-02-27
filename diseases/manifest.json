@@ -8,7 +8,7 @@
         "status": "conformant"
     },
     {
-        "schemaLabel": "human gene shape",
+        "schemaLabel": "disease shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/wikidata-disease-ontology.shex",
         "dataLabel": "Get 100 diseases from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
@@ -16,7 +16,7 @@
         "status": "conformant"
     },
     {
-        "schemaLabel": "human gene shape",
+        "schemaLabel": "disease shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/wikidata-disease-ontology.shex",
         "dataLabel": "Get diseases from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
