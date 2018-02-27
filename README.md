@@ -1,4 +1,13 @@
 # genewiki Shape Expressions. 
+## Shapes
+| Shape | Jenkins | Jupyter | shex.js | Shaclex | 
+|---|---|---|---|---|
+|genes  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json) |-|
+| proteins  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json)| -|
+| diseases  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/diseases/manifest.json)|-|
+| pathways  |-|-|-|-|
+
+
 This repository collects Shape Expression to model and validate Wikidata items added by bots developed and maintained in the Gene wiki project. 
 ## Installation
 Running Shape expressions requires shex.js. Installation instructions can be found [here](https://github.com/shexSpec/shex.js/)
@@ -27,10 +36,6 @@ With shex.js running the following commands downloads the shapes collected here 
 5. Submit a pull request :D
 
 
-### Shapes
-| Shape | Jupyter | shex.js | Shaclex | 
-|---|---|---|---|
-|genes  | |[link](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json) ||
-| proteins  ||| |
+
 
 
