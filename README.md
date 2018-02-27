@@ -28,9 +28,11 @@ With shex.js running the following commands downloads the shapes collected here 
 
 
 ### Shapes
-| Shape | Jupyter | shex.js | Shaclex | 
-|---|---|---|---|
-|genes  | |[link](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json) ||
-| proteins  ||| |
+| Shape | Jenkins | Jupyter | shex.js | Shaclex | 
+|---|---|---|---|---|
+|genes  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json) |-|
+| proteins  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json)| -|
+| diseases  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/diseases/manifest.json)| |
+| pathways  |-|-|-|-|
 
 
