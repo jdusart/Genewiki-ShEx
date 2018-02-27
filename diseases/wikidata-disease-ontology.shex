@@ -39,7 +39,7 @@ gw:disease {
 
 ## Statements 
 
-gw:P31_disease-class EXTRA {
+gw:P31_disease-class EXTRA ps:P31 {
   ps:P31 [wd:Q12136] ;
   prov:wasDerivedFrom @gw:do-reference ;
 } 
