@@ -45,7 +45,7 @@ gw:P31_disease-class {
 } 
 
 gw:P279_disease-parent-class {
-  ps:P279  @gw:disease ;
+  # ps:P279  @gw:disease ; # checking this recursive constraint is to expensive, hence it being a comment for now
   prov:wasDerivedFrom @gw:do-reference ;
 }
 
