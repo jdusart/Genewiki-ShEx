@@ -177,7 +177,8 @@ gw:ncbi-gene-reference { # reference to a NCBI gene record
 
 gw:ensembl-gene-reference {
   pr:P248	[
-         wd:Q30227110 # stated in [P248] Ensembl Release 91 [Q30227110]
+         wd:Q30227110 # stated in [P248] Ensembl Release 89 [Q30227110]
+         wd:Q46401024 # stated in [P248] Ensembl Release 91 [Q30227110]
          ] ; 
   pr:P594	LITERAL ; # Ensembl Gene ID [P594]
 }
