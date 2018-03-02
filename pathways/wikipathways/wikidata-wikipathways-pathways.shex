@@ -15,7 +15,7 @@ PREFIX po: <http://micel.io/pathway_ontology/>
 PREFIX po_obo: <http://purl.obolibrary.org/obo/>
 PREFIX wikicite: <http://micel.io/wikicite/>
 
-start = @gw:wikidata-wp_pathway
+start = @gw:wikidata-wp-pathway
 
 gw:wikidata-wp-pathway {
 	# Statements 
