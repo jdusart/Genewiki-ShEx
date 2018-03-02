@@ -14,6 +14,7 @@ PREFIX gw: <http://micel.io/genewiki/>
 PREFIX po: <http://micel.io/pathway_ontology/>
 PREFIX po_obo: <http://purl.obolibrary.org/obo/>
 PREFIX wikicite: <http://micel.io/wikicite/>
+PREFIX wpidorg: <http://identifiers.org/wikipathways/>
 
 start = @gw:wikidata-wp-pathway
 
@@ -37,6 +38,7 @@ po:pathway_ontology {
 		ps:P2888 [po_obo:~] ;
 	}
 }
+
 gw:wikipathway-identifier {
 	ps:P2410  LITERAL  /^WP[0-9]+$/;
 	prov:wasDerivedFrom @gw:wikipathway_reference ;
@@ -47,22 +49,39 @@ gw:P527_has_part {
 	prov:wasDerivedFrom @gw:wikipathway_reference ;
 }
 
-gw:pathway_part .
+gw:pathway_part EXTRA p:P31 {
+     p:P31  {
+         ps:P31 [
+                    wd:Q7187  # gene
+                    wd:Q8054     # protein
+                    wd:Q11173  # chemical compound
+                    wd:Q12140  # drug                
+                ]
+    }+
+}
 
 gw:P2860_cites {
 	ps:P2860  @wikicite:entry ;
 	prov:wasDerivedFrom @gw:wikipathway_reference ;
 }
-wikicite:entry .
+wikicite:entry {
+     p:P31 {
+        ps:P31 [
+                 wd:Q13442814 # scientific article
+               ]  
+        }
+}
 
 gw:P2888_exact_match {
-	ps:P2888   IRI ;
+	ps:P2888   [ 
+                        wpidorg:~
+         ] ;
 	prov:wasDerivedFrom @gw:wikipathway_reference ;
 }
 
 ## REFERENCES
 gw:wikipathway_reference {
-	pr:P248  wd:Q7999828 ;
+	pr:P248  [wd:Q7999828] ;
 	pr:P813	xsd:dateTime ;
 	pr:P2410  LITERAL  /^WP[0-9]+$/;
 }
