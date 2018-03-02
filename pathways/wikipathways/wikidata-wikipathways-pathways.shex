@@ -29,7 +29,7 @@ gw:wikidata-wp-pathway {
 }
 
 gw:P31_pathway_ontology_term {
-	ps:P31 @po:pathway_ontology ;
+	#ps:P31 @po:pathway_ontology ;
 	prov:wasDerivedFrom @gw:wikipathway_reference ;
 }
 po:pathway_ontology {
@@ -43,7 +43,7 @@ gw:wikipathway-identifier {
 }
 
 gw:P527_has_part {
-	ps:P527   @gw:pathway_part ;
+	ps:P527   @gw:pathway_part* ;
 	prov:wasDerivedFrom @gw:wikipathway_reference ;
 }
 
