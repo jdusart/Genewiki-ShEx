@@ -2,7 +2,7 @@
     {
         "schemaLabel": "pathway in Wikipathways shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/pathways/wikipathways/wikidata-wikipathways-pathways.shex",
-        "dataLabel": "Get 10 gene Items from Wikidata" ,
+        "dataLabel": "Get 10 pathway items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P2410 ?wpid .} LIMIT 10'''@START",
         "status": "conformant"
@@ -10,7 +10,7 @@
     {
         "schemaLabel": "pathway in Wikipathways shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/pathways/wikipathways/wikidata-wikipathways-pathways.shex",
-        "dataLabel": "Get 100 gene Items from Wikidata" ,
+        "dataLabel": "Get 100 pathway items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P2410 ?wpid .  .} LIMIT 100'''@START",
         "status": "conformant"
@@ -18,7 +18,7 @@
     {
         "schemaLabel": "pathway in Wikipathways shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/pathways/wikipathways/wikidata-wikipathways-pathways.shex",
-        "dataLabel": "Get all gene Items from Wikidata" ,
+        "dataLabel": "Get all pathway items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P2410 ?wpid .}'''@START",
         "status": "conformant"
