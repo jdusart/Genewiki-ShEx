@@ -7,6 +7,7 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX pr: <http://www.wikidata.org/prop/reference/>
 PREFIX ps: <http://www.wikidata.org/prop/statement/>
 PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX gw: <http://micel.io/genewiki/>
 
 gw:wikidata-civic_variant_record {
  	p:P31 @gw:P31_instance_of ;
