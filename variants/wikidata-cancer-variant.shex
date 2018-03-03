@@ -52,36 +52,37 @@ gw:wikidata-civic_variant_record {
 gw:P31_instance_of { 
             ps:P31	[ wd:Q15304597 ] ; # Q15304597 = sequence variant
 	        prov:wasDerivedFrom @gw:civic-variant-reference;
-		  } ;
+		  } 
 
 gw:P279_subclass_of { 
 	        ps:P279	@gw:variant_type ;
 	        prov:wasDerivedFrom @gw:civic-variant-reference;
-		  } ;
+		  } 
+
 gw:P3343-biological-variant-of{ 
 	        ps:P3343	@gw:human_gene ;
 	        prov:wasDerivedFrom @gw:civic-variant-reference;
-		    } ;
+		    } 
 
 gw:P1057-chromosome {
  	   ps:P1057 @gw:human-chromosomes ;
  	   pq:P659	@gw:genomic-assembly+ ;  
  	   prov:wasDerivedFrom @gw:civic-variant-reference+ ;   
- 	} ;
+ 	} 
 
 gw:P3354-positive-therapeutic-predictor { 
 	          ps:P3354	@gw:pharmaceutical_drug ;
 	          # P2175 = medical condition treated 
 	 		  pq:P2175	@gw:wikidata-disease ;
  	          prov:wasDerivedFrom @gw:wikicite+ ;
-			} ;
+			} 
 
 gw:P3355-negative-therapeutic-predictor { 
 	          ps:P3355	@gw:pharmaceutical_drug ;
 	          # P2175 = medical condition treated 
 	 		  pq:P2175	@gw:wikidata-disease ;
  	          prov:wasDerivedFrom @gw:wikicite+ ;
-			} ;
+			} 
 gw:P3356-positive-diagnostic-predictor { 
 	          ps:P3356	@gw:wikidata-disease ;
  	          prov:wasDerivedFrom @gw:wikicite+;
