@@ -9,7 +9,10 @@ PREFIX ps: <http://www.wikidata.org/prop/statement/>
 PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
 PREFIX gw: <http://micel.io/genewiki/>
 
-gw:wikidata-civic_variant_record {
+start = @gw:wikidata-civic-variant-record
+
+
+gw:wikidata-civic-variant-record {
  	p:P31 @gw:P31_instance_of ;
  	p:P279 @gw:P279_subclass_of+ ;
 	p:P3343 @gw:P3343-biological-variant-of;
