@@ -2,7 +2,7 @@
 ## Shapes
 | Shape | Jenkins | Jupyter | shex.js | Shaclex | 
 |---|---|---|---|---|
-|genes  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json) |-|
+|genes  |-|[+](https://colab.research.google.com/drive/1QSXPdEL77V13d93XmWO5K5-TQTIYS_P7#scrollTo=Mkd5GKBOdueV)|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json) |-|
 | proteins  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json)| -|
 | diseases  |-|-|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/diseases/manifest.json)|-|
 | pathways (wikipathways) |-|[+](https://colab.research.google.com/drive/10hUMlUlKyApJEXQ0XGxd7U9GZ9WSWGxL#scrollTo=Mkd5GKBOdueV)|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/pathways/wikipathways/manifest.json)|-|
