@@ -22,5 +22,13 @@
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P699 ?doid }'''@START",
         "status": "conformant"
+    },
+    {
+        "schemaLabel": "pathway in Wikipathways shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/pathways/wikipathways/wikidata-wikipathways-pathways.shex",
+        "dataLabel": "Get all pathway items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P2410 ?wpid .}'''@START",
+        "status": "conformant"
     }
 ]
