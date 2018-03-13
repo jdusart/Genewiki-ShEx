@@ -10,7 +10,9 @@ PREFIX pr:  <http://www.wikidata.org/prop/reference/>
 PREFIX ps: <http://www.wikidata.org/prop/statement/>
 PREFIX gw: <http://micel.io/genewiki/>
 
-start = @gw:wikidata-human-gene # Indicates which shape to use to start iterating over the graph if none is provided.
+start = @gw:wikidata-human-gene 
+
+# Indicates which shape to use to start iterating over the graph if none is provided.
 
 # wikidata-human gene is the main shape for a human gene data model in Wikidata. Each line between the brackets
 # represents the structure than can be enforced to validate human gene annotations in Wikidata
