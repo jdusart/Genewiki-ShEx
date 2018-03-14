@@ -2,25 +2,33 @@
     {
         "schemaLabel": "human protein shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
-        "dataLabel": "Get 10 protein Items from Wikidata" ,
+        "dataLabel": "Get 1 protein Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631 .} LIMIT 10`@START",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631 .} LIMIT 1'''@START",
         "status": "conformant"
     },
     {
         "schemaLabel": "human protein shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
-        "dataLabel": "Get 100 protein Items from Wikidata" ,
+        "dataLabel": "Get 10 protein Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .} LIMIT 100`@START",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .} LIMIT 10'''@START",
         "status": "conformant"
     },
     {
         "schemaLabel": "human protein shape",
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
-        "dataLabel": "Get all protein Items from Wikidata" ,
+        "dataLabel": "Get 100 human protein Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .}`@START",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .} LIMIT 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "mouse protein shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
+        "dataLabel": "Get 1 protein Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631 .} LIMIT 1'''@START",
         "status": "conformant"
     },
     {
@@ -28,7 +36,7 @@
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
         "dataLabel": "Get 10 protein Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631 .} LIMIT 10`@START",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .} LIMIT 10'''@START",
         "status": "conformant"
     },
     {
@@ -36,15 +44,7 @@
         "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
         "dataLabel": "Get 100 protein Items from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .} LIMIT 100`@START",
-        "status": "conformant"
-    },
-    {
-        "schemaLabel": "mouse protein shape",
-        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/Wikidata-human-proteins.shex",
-        "dataLabel": "Get all protein Items from Wikidata" ,
-        "data": "Endpoint: https://query.wikidata.org/sparql",
-        "queryMap": "SPARQL `PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .}`@START",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P352 ?uniprotid ; wdt:P703 wd:Q15978631  .} LIMIT 100'''@START",
         "status": "conformant"
     }
 ]
