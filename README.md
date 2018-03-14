@@ -1,7 +1,7 @@
 # genewiki Shape Expressions. 
 ## Shapes
 | Shape name | source | Jenkins | Jupyter | shex.js | Shaclex | 
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 |human genes  ||-|[+](https://drive.google.com/file/d/1cXdZT0BIQe5Qw1Aphkg0NDJGtJCB47IO/view?usp=sharing)|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest_1.json) |[-](http://shaclex.herokuapp.com/load?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/manifest.json)|
 |human proteins  ||-|[+](https://drive.google.com/file/d/11c2pwMTJ3vA4LOTgiHG2QIzLI8RmcYhr/view?usp=sharing)|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/manifest_1.json)| [-](http://shaclex.herokuapp.com/load?manifestURL=ttps://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/manifest_1.json)|
 |mouse proteins  ||-|[+](https://drive.google.com/file/d/1O-09Sc6ArGcI7nvDO-Es9s7Mpo3AQGFB/view?usp=sharing)|[+](https://rawgit.com/shexSpec/shex.js/wikidata/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/manifest.json)| [-](http://shaclex.herokuapp.com/load?manifestURL=ttps://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/proteins/manifest_1.json)|
