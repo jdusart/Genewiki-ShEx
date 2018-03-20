@@ -1,0 +1,10 @@
+[
+    {
+        "schemaLabel": "CIVIC variant shape",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx:x/variants/wikidata-cancer-variant.shex",
+        "dataLabel": "Get all civic Items from Wikidata" ,
+        "data": "Endpoint: https://query.wikidata.org/sparql",
+        "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P3329 ?geneid .}'''@START",
+        "status": "conformant"
+    }
+]
