@@ -46,7 +46,9 @@ gw:P31_disease-class {
 
 } 
 
-gw:P1234_bogus_test {}
+gw:P1234_bogus_test {
+  ps:P1234 .
+}
 
 gw:P279_disease-parent-class {
   # ps:P279  @gw:disease ; # checking this recursive constraint is to expensive, hence it being a comment for now
