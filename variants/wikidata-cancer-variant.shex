@@ -11,7 +11,6 @@ PREFIX gw: <http://micel.io/genewiki/>
 
 start = @gw:wikidata-civic-variant-record
 
-
 gw:wikidata-civic-variant-record {
  	p:P31 @gw:P31_instance_of ;
  	p:P279 @gw:P279_subclass_of+ ;

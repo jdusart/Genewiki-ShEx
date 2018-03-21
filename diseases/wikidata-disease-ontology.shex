@@ -25,6 +25,7 @@ gw:disease EXTRA p:P31 {
   p:P279  @gw:P279_disease-parent-class* ;
   p:P2888 @gw:P2888_disease-ontology-iri ;
   p:P2888 @gw:P2888_identifiers-org-iri ;
+  p:P1234 @gw:P1234_bogus_test ;
 
   ## IDENTIFIERS
   p:P699 @gw:P699_disease_ontology_id ;
@@ -44,6 +45,8 @@ gw:P31_disease-class {
   prov:wasDerivedFrom @gw:do-reference ;
 
 } 
+
+gw:P1234_bogus_test .
 
 gw:P279_disease-parent-class {
   # ps:P279  @gw:disease ; # checking this recursive constraint is to expensive, hence it being a comment for now
