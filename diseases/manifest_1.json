@@ -9,7 +9,7 @@
     },
     {
         "schemaLabel": "disease shape",
-        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/wikidata-disease-ontology.shex",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/diseases/wikidata-disease-ontology.shex",
         "dataLabel": "Get 10 diseases from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P699 ?doid .} LIMIT 10'''@START",
@@ -17,7 +17,7 @@
     },
     {
         "schemaLabel": "disease shape",
-        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/genes/wikidata-disease-ontology.shex",
+        "schemaURL": "https://raw.githubusercontent.com/SuLab/Genewiki-ShEx/master/diseases/wikidata-disease-ontology.shex",
         "dataLabel": "Get 100 diseases from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT ?item WHERE { ?item wdt:P699 ?doid } LIMIT 100'''@START",
