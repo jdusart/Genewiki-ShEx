@@ -18,7 +18,7 @@ PREFIX gw: <http://micel.io/genewiki/>
 
 start = @gw:disease
 
-gw:disease EXTRA p:P31 {
+gw:disease EXTRA p:P31 p:P279 {
 
   # Statements 
   p:P31  @gw:P31_disease-class ;
